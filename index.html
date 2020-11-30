@@ -1,0 +1,269 @@
+<head>
+<title> Homepage of Ganesh Ramesh </title>
+<style>
+	.tab { bgcolor:;   font-size: 16px; font-weight: normal; }
+	.tabSelected { background-color:orange; font-size: 18px; font-weight: bold; }
+</style>
+
+<script>
+
+	function show(targetID) 
+	{
+		target = document.getElementById(targetID);
+		if (target.style.display == "none")
+		{ 
+			target.style.display = ""; 
+		}
+	}
+
+	function hide(targetID) 
+	{
+		target = document.getElementById(targetID);
+		target.style.display = "none";
+	}
+
+	function toggle(targetID) 
+	{
+		target = document.getElementById(targetID);
+		if (target.style.display == "none")
+	      	{ 
+			target.style.display = ""; 
+		}
+		else 
+		{ 
+			target.style.display = "none"; 
+		}
+	}
+
+	function clickTab( tab ){
+		var tab_id = 't' + tab;
+		var content_id = 'c' + tab;
+
+		//set all tabs to normal or unselected mode (unselect)
+		var ele = document.getElementById( 'taboutme' );
+		ele.className = 'tab' ;
+		ele = document.getElementById( 'caboutme' );
+		ele.style.display = "none";
+
+		ele = document.getElementById( 'tresearch' );
+		ele.className = 'tab' ;
+		ele = document.getElementById( 'cresearch' );
+		ele.style.display = "none";
+
+		ele = document.getElementById( 'tlinks' );
+		ele.className = 'tab' ;
+		ele = document.getElementById( 'clinks' );
+		ele.style.display = "none";
+
+		ele = document.getElementById( 'tmisc' );
+		ele.className = 'tab' ;
+		ele = document.getElementById( 'cmisc' );
+		ele.style.display = "none";
+
+		// Set this tab to display
+		ele = document.getElementById( tab_id );
+		ele.className = 'tabSelected' ;
+		ele = document.getElementById( content_id );
+		ele.style.display = "";
+		
+		return false;
+
+	}
+
+   function getToday(){
+		var currentDate = new Date();
+  		var day = currentDate.getDate();
+	  	var month = currentDate.getMonth()+1;
+	  	var year = currentDate.getFullYear();
+		var hour = currentDate.getHours();
+		var minute = currentDate.getMinutes();
+		
+		var returnDate = "";
+		
+		if (month < 10){
+		   returnDate = returnDate + "0";
+		}
+		returnDate = returnDate + month + "/";
+		
+		if (day < 10){
+		   returnDate = returnDate + "0";
+		}
+		returnDate = returnDate + day + "/" + year;
+        return returnDate;
+   }
+   
+   function getTime(){
+   		var currentDate = new Date()
+		var hour = currentDate.getHours()
+		var minute = currentDate.getMinutes()
+		if (hour < 12) {
+			returnTime = hour + ":"
+		}
+		else {
+			returnTime = (hour - 12) + ":"
+		}
+		if(minute < 10){
+	  		returnTime = returnTime + "0" 
+		}
+		returnTime = returnTime + minute
+		if (hour < 12){
+		   returnTime = returnTime + "  A.M."
+		}
+		else {
+		   returnTime = returnTime + "  P.M."		
+		}
+		return returnTime;
+   }
+
+
+</script>
+</head>
+
+
+<!------------------ BODY OF HOMEPAGE BEGINS HERE ------------------------->
+<body bgcolor="#D0D7FF">
+
+<!----------------------------- HEADER FOR HOME PAGE IS HERE  ------------------->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FE9A2E">
+	<tr>
+	<td valign="top" align="left"><table> 
+	    <tr><td
+	         onmouseover="document.mypicture.src='images/ganesh-profile.jpg';"
+	         onmouseout="document.mypicture.src='images/getafix.jpg';">
+  	        <font face="Comic Sans MS" size=8 color=black>Ganesh Ramesh</font>
+  	    </td></tr>
+	    <tr><td><font face="Comic Sans MS" size=5 color=black>Apple Inc.</font></td></tr>
+	    <tr><td><font face="Comic Sans MS" size=4 color=blue><b><i>I am on the hunt for who I've not yet become...</i></b></font></td></tr>
+
+		<tr><td><font face="Comic Sans MS" size=3 color=black>
+			<script language="javascript">
+				document.write("<b> Today's Date: " + getToday() + "</b>")
+				document.write("<b> Time Loaded: " + getTime() + "</b>")		
+			</script>
+		</font></td></tr>
+
+	<tr><td><form method="get" action="https://duckduckgo.com/">
+    <input size="50" name="q">
+    <input type="submit" value="Search">
+	</form></td></tr>
+	</table></td>  
+
+	<td valign="top"><table> 
+	<tr><td>
+	<a href="#" onClick="window.open('https://ie.linkedin.com/in/ganeshramesh', '_blank')">
+	<img name=linkedin-button src="images/LinkedInProfileButton.jpg" width="120" height="60">
+	</a>
+	</td></tr>
+	
+	<tr><td>
+	<a href="https://twitter.com/ganeshramesh?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ganeshramesh</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</td></tr>
+	
+	</table></td>  
+
+	 <td valign="top">
+	 <img name=mypicture src="images/getafix.jpg" width="200" height="200" border="1">
+     <br>
+     <font face="Comic Sans MS" size=3 color=black>
+	 <b><i>Something is always brewing...</i></b>
+	 </font>
+	 </td>
+	</tr>
+</table>    
+
+	<!-------------- The following is the weather widget. ------------------>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FE9A2E">
+<tr><font face="Comic Sans MS" size=2>
+<a class="weatherwidget-io" href="https://forecast7.com/en/37d78n121d98/san-ramon/?unit=us" data-label_1="SAN RAMON" data-label_2="CALIFORNIA" data-font="Monaco" data-theme="dark" >SAN RAMON CALIFORNIA</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</font></tr>
+</table>    
+	
+	<!-------------- Tabbed Content Starts here ------------------>
+
+<div><font face="Comic Sans MS" size=6>
+<table width="100%" border="1" cellpadding="0" cellspacing="0"><tr align="center">
+	<td bgcolor="#63C6DE" id="taboutme" class="tabSelected" width="25%">
+	<a href="javascript:;" onclick="return  clickTab('aboutme');"> 
+	About Me
+	</a>
+	</td>
+	<td bgcolor="#94D6CE" id="tresearch" class="tab" width="25%">
+	<a href="javascript:;" onclick="return  clickTab('research');"> 
+	Research
+	</a>
+	<td bgcolor="#F7BDDE" id="tlinks" class="tab" width="25%">
+	<a href="javascript:;" onclick="return  clickTab('links');"> 
+	Links
+	</a>
+	</td>
+	<td bgcolor="#C6E7DE" id="tmisc" class="tab" width="25%">
+	<a href="javascript:;" onclick="return  clickTab('misc');"> 
+	Misc
+	</a>
+	</td>
+</tr></table></font></div>
+
+<br>
+
+<div id="caboutme" style="display:">
+<font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+  I am a serial data scientist/engineer. I currently work at Apple with the Maps Search team. I lead some of the efforts that lie in the intersection of 
+  Machine Learning, Information Retrieval, Search and Recommender Systems with an emphasis on Representation Learning (Think Embeddings, Distributed Word Representations)
+  with location context. 
+
+<p>
+  
+  In the past I have worked at several companies dabbling in various areas of Data Management and Mining - in the areas of advertising (Amazon, Yahoo), 
+  search (Microsoft), spam detection (Microsoft), product data science (LinkedIn) and search/recommender systems for Education (Edmodo).   
+  Feel free to check out my LinkedIn profile to know more about me. 
+
+<p>
+
+  I love to stay curious and learn new things. When not solving problems, I read, listen to music, travel with my wonderful family and spend some quality
+  time experimenting with my Fujifilm X-S10 and a 16mm f1.4 prime lens.     	
+</td></tr></table></font></div>
+
+<div id="cresearch" style="display:none">
+<font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+	I have a strong bias towards applied research. I derive satisfaction in seeing things work - think code and prototypes over theorems that remain theorems. 
+Having said that, I do believe in having a strong theoretical foundation and a solid intuitive basis for any applied work. 
+
+	For the past two years (until June 2020), I led and shipped the Machine learned Ranker for Address Search for Apple Maps. The ranker is responsible for serving 
+the top ranked results for address queries within the Apple Maps app across all the devices. Millions of queries each day are impacted and served by this ranker 
+across the world.
+
+	My current work revolves around architecting applications of Machine Learning in the Search Stack for Apple Maps. Examples of specific problems are applications
+of Machine Translation to enhance Search Quality, Representation Learning for Maps with location context, Application of Knowledge bases to Maps Search and 
+Neural IR. 
+	  
+<p>
+
+	I earned my Ph.D in Computer Science from <a href="http://www.cs.albany.edu">The University at Albany (SUNY)</a> after which I spent two wonderful years at 
+<a href="http://www.cs.ubc.ca">The University of British Columbia</a> in Vancouver. A (rather dated) <a href="https://dblp.org/pid/81/5709">list of publications 
+from the past can be found here.</a> 
+
+<p>
+
+A question I ask before writing papers - "Will people devote their precious time in reading this work and benefit from it?" - If I have doubts, then I let it pass.
+Probably a lot of missed opportunity in getting more publications but it helps me regain a lot of time. The learnings from the work do stay back as experience - so 
+not a total loss.
+
+</td></tr></table></font></div>
+
+<div id="clinks" style="display:none">
+<font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+</td></tr></table></font></div>
+
+<div id="cmisc" style="display:none">
+<font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+</td></tr></table></font></div>
+
+</body>
