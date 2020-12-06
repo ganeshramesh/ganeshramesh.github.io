@@ -55,6 +55,11 @@
 		ele = document.getElementById( 'clinks' );
 		ele.style.display = "none";
 
+		ele = document.getElementById( 'tcode' );
+		ele.className = 'tab' ;
+		ele = document.getElementById( 'ccode' );
+		ele.style.display = "none";
+
 		ele = document.getElementById( 'tmisc' );
 		ele.className = 'tab' ;
 		ele = document.getElementById( 'cmisc' );
@@ -160,6 +165,9 @@
 	<a href="https://twitter.com/ganeshramesh?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ganeshramesh</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</td></tr>
 	
+	<td><font face="Comic Sans MS" size=4 color=blue><b><i>
+	<a href="#" onClick="window.open('files/GaneshRamesh-CV.pdf', '_blank')">My Latest CV</a>
+	</i></b></font></td>
 	</table></td>  
 
 	 <td valign="top">
@@ -186,21 +194,26 @@
 
 <div><font face="Comic Sans MS" size=6>
 <table width="100%" border="1" cellpadding="0" cellspacing="0"><tr align="center">
-	<td bgcolor="#63C6DE" id="taboutme" class="tabSelected" width="25%">
+	<td bgcolor="#63C6DE" id="taboutme" class="tabSelected" width="20%">
 	<a href="javascript:;" onclick="return  clickTab('aboutme');"> 
 	About Me
 	</a>
 	</td>
-	<td bgcolor="#94D6CE" id="tresearch" class="tab" width="25%">
+	<td bgcolor="#94D6CE" id="tresearch" class="tab" width="20%">
 	<a href="javascript:;" onclick="return  clickTab('research');"> 
 	Research
 	</a>
-	<td bgcolor="#F7BDDE" id="tlinks" class="tab" width="25%">
+	<td bgcolor="#F7BDDE" id="tlinks" class="tab" width="20%">
 	<a href="javascript:;" onclick="return  clickTab('links');"> 
 	Links
 	</a>
 	</td>
-	<td bgcolor="#C6E7DE" id="tmisc" class="tab" width="25%">
+	<td bgcolor="#C6E7DE" id="tcode" class="tab" width="20%">
+	<a href="javascript:;" onclick="return  clickTab('code');"> 
+	Code
+	</a>
+	</td>
+	<td bgcolor="#F7BDDE" id="tmisc" class="tab" width="20%">
 	<a href="javascript:;" onclick="return  clickTab('misc');"> 
 	Misc
 	</a>
@@ -226,6 +239,12 @@
 
   I love to stay curious and learn new things. When not solving problems, I read, listen to music, travel with my wonderful family and spend some quality
   time experimenting with my Fujifilm X-S10 and a 16mm f1.4 prime lens.     	
+
+<p>
+
+I teach <font face="Comic Sans MS" size=5>தமிழ்</font>் on Sunday mornings during the school year at <a href="#" onClick="window.open('https://www.catamilacademy.org/', '_blank')">The California Tamil 
+Academy.</a>
+
 </td></tr></table></font></div>
 
 <div id="cresearch" style="display:none">
@@ -250,10 +269,9 @@ from the past can be found here.</a>
 
 <p>
 
-A question I ask before writing papers - "Will people devote their precious time in reading this work and benefit from it?" - If I have doubts, then I let it pass.
+    A question I ask before writing papers - "Will people devote their precious time in reading this work and benefit from it?" - If I have doubts, then I let it pass.
 Probably a lot of missed opportunity in getting more publications but it helps me regain a lot of time. The learnings from the work do stay back as experience - so 
 not a total loss.
-
 </td></tr></table></font></div>
 
 <div id="clinks" style="display:none">
@@ -262,7 +280,7 @@ not a total loss.
 <table border=5>
     <thead>
         <tr>
-            <th colspan="2">A Collection of Resources on Topics</th>
+            <th colspan="2"><font face="Comic Sans MS" size=5>A Collection of Resources on Deep Learning</font></th>
         </tr>
     </thead>
     <tbody>
@@ -287,23 +305,24 @@ not a total loss.
         	<td><a href="#" onClick="window.open('https://github.com/d2l-ai', '_blank')">Dive into Deep Learning - D2L.ai</a></td>
             <td>A Git repo of the free book written by Alex Smola and others from Amazon. The <a href="#" onClick="window.open('https://d2l.ai', '_blank')">Book Website</a></td>
         </tr>
-         <tr>
-        	<td><a href="#" onClick="window.open('https://youtu.be/-9evrZnBorM', '_blank')">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a></td>
-            <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/1810.04805', '_blank')">arXiv Link</a></td>
-        </tr>
         <tr>
         	<td><a href="#" onClick="window.open('https://youtu.be/iDulhoQ2pro', '_blank')">Attention is all you need.</a></td>
             <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/1706.03762', '_blank')">arXiv Link</a></td>
         </tr>
         <tr>
-        	<td><a href="#" onClick="window.open('https://youtu.be/SY5PvZrJhLE', '_blank')">GPT3: Language Models are Few-Shot Learners</a></td>
-            <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/2005.14165', '_blank')">arXiv Link</a></td>
-        </tr>
-        <tr>
         	<td><a href="#" onClick="window.open('https://youtu.be/nv6oFDp6rNQ', '_blank')">Hopfield Networds</a></td>
             <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/2008.02217', '_blank')">arXiv Link</a> and 
             <a href="#" onClick="window.open('https://github.com/ml-jku/hopfield-layers', '_blank')">Code</a></td>
-        </tr>
+       </tr>
+       <tr>
+        	<td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=Yr1mOzC93xs&ab_channel=MicrosoftResearch', '_blank')">From Deep Learning Of
+        	Disentangled Representations to Higher-Level Cognition</a></td>
+            <td>Yoshua Bengio's talk at MSR</td>
+       </tr>
+       <tr>
+        	<td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=r0Ogt-q956I', '_blank')">Deep Learning: A Crash Course</a></td>
+            <td>A Three hour introduction to DL - SIGGRAPH talk</td>
+       </tr>
        <tr>
         	<td><a href="#" onClick="window.open('https://jmozah.github.io/links/', '_blank')">A Deep Learning Reading/Watching List</a></td>
             <td></td>
@@ -322,13 +341,217 @@ not a total loss.
             with some code (not related to this course but a different one).</td>
         </tr>
     </tbody>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Resources on Embeddings and Representation Learning</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Embedding Methods for Natural Language Processing - 
+            <a href="#" onClick="window.open('https://cilvr.cs.nyu.edu/lib/exe/fetch.php?media=deeplearning:2015:weston.pdf', '_blank')">PART 1</a> and 
+            <a href="#" onClick="window.open('https://cilvr.cs.nyu.edu/lib/exe/fetch.php?media=deeplearning:2015:dl-nyu-bordes.pdf', '_blank')">PART 2</a></td>
+	        <td><a href="#" onClick="window.open('http://emnlp2014.org/tutorials/8_notes.pdf', '_blank')">Tutorial given at EMNLP 2014 Bordes et. al.</a> and a 
+	        <a href="#" onClick="window.open('https://www.youtube.com/watch?v=nVEQJpm4heY', '_blank')">talk - Teaching Machines to Understand Language.</a></td>
+        </tr>
+        
+        <tr>
+            <td>On Word Embeddings - Sebastian Ruder - <a href="#" onClick="window.open('https://ruder.io/word-embeddings-1/', '_blank')">Part 1</a>, 
+            <a href="#" onClick="window.open('https://ruder.io/word-embeddings-softmax/index.html', '_blank')">Part 2 - Approximating the Softmax</a>,
+            <a href="#" onClick="window.open('https://ruder.io/secret-word2vec/index.html', '_blank')">Part 3 - Secret Ingredients of Word2Vec</a>
+            </td>
+	        <td><a href="#" onClick="window.open('https://ruder.io/cross-lingual-embeddings/index.html', '_blank')">Unofficial Part 4 - A survey of cross-lingual word embedding models</a>, 
+            <a href="#" onClick="window.open('https://ruder.io/word-embeddings-2017/index.html', '_blank')">Unofficial Part 5 - Word embeddings in 2017: Trends and future directions</a>
+			</td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://medium.com/@errabia.oussama/elmo-embeddings-a-use-case-study-with-code-part-1-e2e5eb7df85c', '_blank')">
+            Elmo Embeddings : A use case study with code — part 1</a></td>
+	        <td><a href="#" onClick="window.open('https://arxiv.org/pdf/1802.05365.pdf', '_blank')">Peters M. E., Neumann M., Uyyer M., Gardner M., Clark C., Lee K., Zettlemoyer L.. Deep contextualized word representations. 2018.</a></td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://nlp.stanford.edu/projects/glove/', '_blank')">GloVe: Global Vectors for Word Representation</a></td>
+            <td>Code, Papers and details about the project.</td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://youtu.be/-9evrZnBorM', '_blank')">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a></td>
+            <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/1810.04805', '_blank')">arXiv Link</a></td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://youtu.be/SY5PvZrJhLE', '_blank')">GPT3: Language Models are Few-Shot Learners</a></td>
+            <td>Yannick Kilcher. <a href="#" onClick="window.open('https://arxiv.org/abs/2005.14165', '_blank')">arXiv Link</a></td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://info.cambridgespark.com/latest/word-embeddings-in-python', '_blank')">Word Embeddings in Python with Spacy and Gensim</a></td>
+            <td><a href="#" onClick="window.open('http://radimrehurek.com/gensim/', '_blank')">GENSIM</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('http://mlexplained.com/2017/12/28/an-overview-of-sentence-embedding-methods/', '_blank')">Sentence Embedding Methods</a></td>
+        	<td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=7j20MC6J_QU', '_blank')">CMU Neural Nets for NLP 2017 (7): Using/Evaluating Sentence Representations</a></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Embeddings for Ranking and Retrieval</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.semanticscholar.org/paper/Indexing-by-Latent-Semantic-Analysis-Deerwester-Dumais/20a80a7356859daa4170fb4da6b87b84adbb547f', '_blank')">Latent Semantic Indexing</a> (Susan Dumais' Original Paper) - 
+            <a href="#" onClick="window.open('http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.54.5141', '_blank')">TREC 2</a> and 
+            <a href="#" onClick="window.open('https://www.semanticscholar.org/paper/Latent-Semantic-Indexing-(LSI)%3A-TREC-3-Report-Dumais/21496686f28b5b7b978cc9155bbb164424b55e7b', '_blank')">TREC-3 Report</a></td>
+	        <td><a href="#" onClick="window.open('https://nlp.stanford.edu/IR-book/html/htmledition/latent-semantic-indexing-1.html', '_blank')">Latent Semantic Indexing - From the IR Textbook</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('http://www.cs.cornell.edu/~kilian/papers/ssi-cikm.pdf', '_blank')">Supervised Semantic Indexing - CIKM</a>, 
+            <a href="#" onClick="window.open('https://ronan.collobert.com/pub/matos/2009_ssi_ecir.pdf', '_blank')">ECIR Paper</a></td>
+        	<td><a href="#" onClick="window.open('http://www.thespermwhale.com/jaseweston/papers/wsabie-ijcai.pdf', '_blank')">WSABIE - IJCAI</a></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Embeddings for Language Modeling</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        	<td>Neural Network Language Models (Bengio)
+        	<a href="#" onClick="window.open('https://jmlr.org/papers/volume3/bengio03a/bengio03a.pdf', '_blank')">JMLR 2003</a>, 
+        	<a href="#" onClick="window.open('http://www.gatsby.ucl.ac.uk/aistats/fullpapers/208.pdf', '_blank')">AISTAS - Hierarchical Models</a></td>
+        	<td><a href="#" onClick="window.open('https://www.aclweb.org/anthology/D16-1123.pdf', '_blank')">CNN Language Model</a></td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://www.semanticscholar.org/paper/Recurrent-neural-network-based-language-model-Mikolov-Karafi%C3%A1t/9819b600a828a57e1cde047bbe710d3446b30da5', '_blank')">
+        	RNN based Language Model - Mikolov INTERSPEECH 2010</a></td>
+        	<td><a href="#" onClick="window.open('https://github.com/mspandit/rnnlm', '_blank')">Code for RNN Language Model</a></td>
+        </tr>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://arxiv.org/abs/1301.3781', '_blank')"> Word2Vec Paper - Mikolov et. al. 2013</a></td>
+        	<td><a href="#" onClick="window.open('https://code.google.com/archive/p/word2vec/', '_blank')">Word2Vec</a></td>
+        </tr>        
+    </tbody>        
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Embeddings for Supervised Prediction Tasks</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        	<td><a href="#" onClick="window.open('https://arxiv.org/pdf/1103.0398v1.pdf', '_blank')">NLP from Scratch</a></td>
+        	<td><a href="#" onClick="window.open('https://ronan.collobert.com/pub/matos/2008_nlp_icml.pdf', '_blank')">A Unified Architecture for NLP - ICML 2008 - Collobert and Weston</a></td>
+        </tr>        
+        <tr>
+        	<td><a href="#" onClick="window.open('ttps://www.socher.org/index.php/Main/ParsingNaturalScenesAndNaturalLanguageWithRecursiveNeuralNetworks', '_blank')">
+        	Parsing Natural Scenes and Natural Language using Recursive Neural Nets - Socher et. al. ICML 2011</a></td>
+        	<td><a href="#" onClick="window.open('http://nlp.stanford.edu/pubs/SocherLinNgManning_ICML2011.pdf', '_blank')">The Paper</a>, 
+        	<a href="#" onClick="window.open('http://techtalks.tv/talks/54422/', '_blank')">The Video</a></td>
+        </tr>        
+    </tbody>
 </table>
 
 
 </td></tr></table></font></div>
 
+<div id="ccode" style="display:none">
+<font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+<table border=5>
+    <thead>
+        <tr>
+            <th colspan="2">Code Resources</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" onClick="window.open('https://python-pillow.org/', '_blank')">Python Pillow</a></td>
+            <td>Interesting Python Fork of the Python Imaging Library which is used for processing images - extracting metadata from photos etc..</td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://cherrypy.org/', '_blank')">CherryPy</a></td>
+            <td>A Minimalist Python Web Framework. I used it to hack up a quick web service for many hackathon(s) and it has been a life/time saver. </td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://requests.readthedocs.io/en/master/', '_blank')">Requests Library</a></td>
+            <td>A Python library for HTTP Requests...</td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.tensorflow.org/', '_blank')">Tensorflow</a></td>
+            <td>Tensorflow Main Page..</td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://keras.io', '_blank')">KERAS</a></td>
+            <td>KERAS Deep Learning library for Theano and TensorFlow</td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://sourceforge.net/projects/rnnl/', '_blank')">RNNLIB</a></td>
+            <td>Alex Graves, A recurrent neural network library for sequence learning problems</td>
+        </tr>
+    </tbody>
+</table>
+
+</td></tr></table></font></div>
+
 <div id="cmisc" style="display:none">
 <font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
+
+
+<table border=5>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Music</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=sn19xvfoXvk', '_blank')">Cynthia Erivo - Stand Up</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=Gztabfs5ngA', '_blank')">Tom Sawyer - Rush</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/watch?v=8_Xs8nzrrkM', '_blank')">In the Air Tonight - Phil Collins</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.sangeethapriya.org/', '_blank')">Sangeethapriya</a></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Photography</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/c/GajanBalan/featured', '_blank')">Gajan Balan's Photography Channel</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/channel/UCBP4ONfugOhpI5juBKE_PTg', '_blank')">Andrew and Denae's Photography Channel</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/user/dpreviewcom', '_blank')">Digital Photography Review TV</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://www.youtube.com/user/theartofphotography', '_blank')">The Art of Photography</a></td>
+        </tr>
+		<tr>
+			<td><a href="#" onClick="window.open('https://www.youtube.com/channel/UCRfgHb3W-Nb7uvdX85Bw0AQ', '_blank')">Omar Gonzalez Photography Channel</a></td>
+		</tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="2"><font face="Comic Sans MS" size=5>Indology, Sanskrit etc...</font></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" onClick="window.open('https://samskritabharatiusa.org/', '_blank')">Samskritha Bharathi</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onClick="window.open('https://rajivmalhotra.com/', '_blank')">Rajiv Malhotra at the Infinity Foundation</a></td>
+        </tr>
+    </tbody>
+</table>
+
 
 </td></tr></table></font></div>
 
