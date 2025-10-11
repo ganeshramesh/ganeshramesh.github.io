@@ -138,13 +138,22 @@
 	         onmouseout="document.mypicture.src='images/getafix.jpg';">
   	        <font face="Comic Sans MS" size=8 color=black>Ganesh Ramesh</font>
   	    </td></tr>
-	    <tr><td><font face="Comic Sans MS" size=5 color=black>(Consulting) Gen AI Engineer at Samsung Research America</font></td></tr>
-	    <tr><td><font face="Comic Sans MS" size=4 color=blue><b><i>I am on the hunt for who I've not yet become...</i></b></font></td></tr>
+	    <tr><td><font face="Comic Sans MS" size=5 color=black>Gen AI Architect</font></td></tr>
+	    <tr><td><font face="Comic Sans MS" size=5 color=blue><b><i>I am on the quest for who I've not yet become...</i></b></font></td></tr>
 
 		<tr><td><font face="Comic Sans MS" size=3 color=black>
 			<script language="javascript">
-				document.write("<b> Today's Date: " + getToday() + "</b>")
-				document.write("<b> Time Loaded: " + getTime() + "</b>")		
+				document.write("<b>" + new Intl.DateTimeFormat('en-US', {
+    					weekday: 'long',
+    					year: 'numeric',
+    					month: 'long',
+    					day: 'numeric',
+    					hour: '2-digit',
+    					minute: '2-digit',
+    					second: '2-digit',
+    					timeZoneName: 'short',
+    					timeZone: 'America/Los_Angeles'
+					}).format(new Date()) + "</b>")
 			</script>
 		</font></td></tr>
 
@@ -157,7 +166,7 @@
 	<td valign="top"><table> 
 	<tr><td>
 	<a href="#" onClick="window.open('https://ie.linkedin.com/in/ganeshramesh', '_blank')">
-	<img name=linkedin-button src="images/LinkedInProfileButton.jpg" width="120" height="60">
+	<img name=linkedin-button src="images/LinkedInProfileButton.jpg" width="170" height="50">
 	</a>
 	</td></tr>
 	
@@ -225,12 +234,15 @@
 <div id="caboutme" style="display:">
 <font face="Comic Sans MS" size=2><table border="0" width="100%"><tr><td>
 
-  I am a lifelong learner and am generally interested in Artifical Intelligence, Machine Learning and their applications to various domains in daily life. I am currently involved in developing applications of Gen AI in the health domain. In the past, I have successfully developed and deployed products in several companies - Rankers for Address Search at Apple Maps, fine tuned models for query understanding at Siri, Search systems for education, Advertising at Yahoo! labs and Amazon, Spam detection and Search at Microsoft, Data Science at LinkedIn etc. I love to stay curious and learn new things other than these areas of general interest. 
-
+  I am a seasoned technical leader and a lifelong learner, generally interested in Artificial Intelligence, ML with applications in daily life. My current life revolves around one word - Agents. My current interests are in Multi-Agent systems and how they function in various settings. More on this in the near future... 
 
 <p>
 
-  Outside of the crazy professional life, I stay sane with my pursuits in reading, music, exploring the glorious architectures of ancient temples and travel with my wonderful family. I am also passionate about photography and am ably assisted by my partner in crime - my <a href="#" onClick="window.open('https://fujifilm-x.com/en-us/products/cameras/x-t5/', '_blank')">Fuji XT-5.</a>     	
+  In the recent past, I have successfully led and shipped products in Search (Address Ranker for Maps), fine tuned models for query understanding, developed explainable tools for model predictions, and worked on LLM Evaluation and traceability. 
+
+<p>
+
+  Outside of the crazy professional life, I stay sane with my pursuits in reading, music, exploring the glorious architectures of ancient temples and travel with my wonderful family. I am ably assisted by my <a href="#" onClick="window.open('https://fujifilm-x.com/en-us/products/cameras/x-t5/', '_blank')">partner in crime.</a>     	
 
 
 </td></tr></table></font></div>
